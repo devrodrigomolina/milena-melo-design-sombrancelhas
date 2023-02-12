@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../../styles/Responsive";
 
 export const ContainerTopHeader = styled.div`
   width: calc(100% - 100px) ;
@@ -11,7 +12,9 @@ export const ContainerTopHeader = styled.div`
   top: 0;
   right: 0;
   z-index: 9;
-
+  @media ${devices.tabletM} {
+    display: none;
+  }
   .logo {
     width: 200px;
     height: 100%;
