@@ -11,7 +11,6 @@ export const ContainerHome = styled.section`
   
 `
 export const ImageBG = styled.section`
-
   height: 100vh;
   background-image: url(${home_image});
   background-position: center;
@@ -29,6 +28,12 @@ export const TextInfos = styled.div`
     top: 48%;
     right: 50px;
   }
+  @media ${devices.tablet} {
+    max-width: 70vw;
+    top: 48%;
+    right: 10px;
+    margin-right: 10px;
+  }
   h2 {
     text-align: end;
     padding-right: 20px;
@@ -41,11 +46,17 @@ export const TextInfos = styled.div`
     -webkit-background-clip: text;
     -text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
+    @media ${devices.tablet} {
+      font-size: 3rem;
+    }
   }
   .btns {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    @media ${devices.tablet} {
+      flex-direction: column;
+    }
     button {
       margin: 25px 0 0 30px;
     }
