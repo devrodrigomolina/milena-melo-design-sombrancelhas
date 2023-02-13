@@ -6,7 +6,7 @@ import bg_home from "../../assets/bg_home_02.jpg";
 export const ContainerAbout = styled.section`
   margin-top: 100px;
   width: 100%;
-  height: 180vh;
+  min-height: 180vh;
   background-image: url(${bg_home});
   background-position: bottom !important;
   background-repeat: no-repeat !important;
@@ -15,25 +15,6 @@ export const ContainerAbout = styled.section`
 
 export const InfosAbout = styled.section`
   font-family: "Lato", sans-serif;
-  .title {
-    width: 100%;
-    max-width: 75vw;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    margin: 0 auto;
-    font-weight: bold;
-    background-image: url(${img_icon_bg});
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    img {
-      width: 100px;
-      padding-top: 20px;
-    }
-  }
   .about {
     font-size: 1.3rem;
     line-height: 38px;
@@ -60,10 +41,11 @@ export const InfosAbout = styled.section`
       flex-direction: column;
       .cards {
         width: 100%;
-        height: 330px;
+        min-height: 330px;
         padding-top: 80px;
         text-align: start;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-evenly;
         .img {
