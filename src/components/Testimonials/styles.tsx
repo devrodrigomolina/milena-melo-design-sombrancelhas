@@ -10,7 +10,7 @@ export const ContainerTestimonials = styled.section`
   }
   .container-comments {
     width: 100%;
-    height: 400px;
+    min-height: 400px;
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
