@@ -11,7 +11,7 @@ display: flex;
 export const ContainerHeader = styled.header<menuTypes>`
   width: 100px;
   background-color: white;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   display: flex;
   flex-direction: column;
