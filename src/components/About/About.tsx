@@ -10,13 +10,12 @@ const About = () => {
   return (
     <C.ContainerAbout>
       <C.InfosAbout>
-        <div className="title">
-          <Titles
-            title="Bem vindo ao estudio Milena Melo"
-            subtitle="QUALIDADE ACIMA DE QUANTIDADE"
-          />
-          <img src={divider} />
-        </div>
+     
+        <Titles
+          title="Bem vindo ao estudio Milena Melo"
+          subtitle="QUALIDADE ACIMA DE QUANTIDADE"
+        />
+    
         <div className="about">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
